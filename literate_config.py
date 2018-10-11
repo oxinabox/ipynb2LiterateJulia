@@ -31,8 +31,9 @@ def escape_comments(source):
 def format_markdown_block(source):
     return '\n'.join([ '# ' + line for line in source.split('\n')])
 
-c.MarkdownExporter.filters = {
+c.ScriptExporter.filters = {
     'strip_ansi': strip_ansi,
-    'escape_comments': escape_comments
+    'escape_comments': escape_comments,
+    'format_markdown_block': format_markdown_block
 
 }
