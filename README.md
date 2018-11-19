@@ -6,7 +6,7 @@ NBConverter stuff to convert Jupyter Notebooks in to Literate.jl files (This is 
 ## Demo
 
  1. We start with this notebook: [ODEIntroduction.ipynb](demo/ODEIntroduction.ipynb)
- 2. we run `bash run_nbconvert.sh demo/ODEIntroduction.ipynb` to generate this Literate julia file: [ODEIntroduction.jl](demo/ODEIntroduction.jl)
+ 2. we run `bash literate_run_nbconvert.sh demo/ODEIntroduction.ipynb` to generate this Literate julia file: [ODEIntroduction.jl](demo/ODEIntroduction.jl)
  3. we run the Literate.jl script to generate the markdown, notebook and script files in [literate_output/](demo/literate_output/):
  ```julia
  julia> Literate.markdown("demo/ODEIntroduction.jl", "demo/literate_output/")
