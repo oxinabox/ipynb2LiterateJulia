@@ -1,4 +1,4 @@
-# WeaveAwayNotebooks
+# ipynb2LiterateJulia
 NBConverter stuff to convert Jupyter Notebooks in to Literate.jl files (This is the opposite of Literate.jl)
 
 
