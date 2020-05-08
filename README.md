@@ -27,3 +27,16 @@ julia> Literate.script("demo/ODEIntroduction.jl", "demo/literate_output/"; execu
 [ Info: writing result to `~/.julia/environments/WeaveAwayNotebooks/demo/literate_output/ODEIntroduction.jl`
 "/home/wheel/oxinabox/.julia/environments/WeaveAwayNotebooks/demo/literate_output/ODEIntroduction.jl"
  ```
+
+### julia script
+
+We also provide a short and simple Julia script for running the process.
+It is in the file [literate_run_nbconvert.jl].
+Step 2 above can be replaced with:
+
+```julia
+julia> include("literate_run_nbconvert.jl")
+literate_run_nbconvert
+
+julia> literate_run_nbconvert("demo/")
+```
