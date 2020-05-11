@@ -18,7 +18,7 @@ function literate_run_nbconvert(source_dir="."; output_dir=source_dir, config_di
     template  = joinpath(config_dir, "literate.tpl")
 
     for file in files
-        printstyled("\n\n-------------Converting $files-------------\n", color=:blue)
+        printstyled("\n\n-------------Converting $(file)-------------\n", color=:blue)
         run(`jupyter nbconvert  --to script $file --output-dir $output_dir --config $config --template $template --Application.log_level='DEBUG'`)
     end
 end
